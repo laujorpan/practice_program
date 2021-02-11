@@ -1,8 +1,9 @@
 package beverages;
 
-public class TeaWithMilk extends Tea {
-    @Override
-    public double price() {
-        return super.price() +  0.10;
+import supplements.Milk;
+
+public class TeaWithMilk extends Beverage {
+    public TeaWithMilk() {
+        super(new liquid.Tea(), new Milk());
     }
 }

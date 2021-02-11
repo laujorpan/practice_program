@@ -1,8 +1,9 @@
 package beverages;
 
-public class HotChocolateWithCream extends HotChocolate {
-    @Override
-    public double price() {
-        return 1.45 + 0.15;
+import supplements.Cream;
+
+public class HotChocolateWithCream extends Beverage {
+    public HotChocolateWithCream() {
+        super(new liquid.HotChocolate(), new Cream());
     }
 }

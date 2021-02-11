@@ -1,8 +1,10 @@
 package beverages;
 
-public class CoffeeWithMilkAndCream extends Coffee {
-    @Override
-    public double price() {
-        return super.price() +  0.25;
+import supplements.Cream;
+import supplements.Milk;
+
+public class CoffeeWithMilkAndCream extends Beverage {
+    public CoffeeWithMilkAndCream() {
+        super(new liquid.Coffee(), new Milk(), new Cream());
     }
 }
